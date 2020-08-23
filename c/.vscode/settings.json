@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.letterSpacing": -2,
+    "files.associations": {
+        "limits": "c",
+        "string_view": "cpp",
+        "sstream": "c"
+    }
+}
