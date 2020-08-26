@@ -1,4 +1,8 @@
 #include <iostream>
+/* 
+We have consider matrix to start from 1, indeces.
+Matrix as [nxn]
+*/
 
 class Diagonal{
     private:
@@ -18,6 +22,7 @@ class Diagonal{
         void set(int i, int j ,int x);
         int get(int i, int j);
         void display();
+
         ~Diagonal(){
             delete [] A;
         }
@@ -37,8 +42,8 @@ int Diagonal::get(int i, int j){
 }
 
 void Diagonal::display(){
-    for(int i = 0; i<this->n; i++){
-        for (int  j = 0; j<this->n;j++){
+    for(int i = 1; i<=this->n; i++){
+        for (int  j = 1; j<=this->n;j++){
             if(i==j)
                 printf("%d ",this->A[i-1]);
             else
